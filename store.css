@@ -1,0 +1,78 @@
+*{
+    margin: 0px;
+}
+
+.container{
+    max-width: 80vw;
+}
+
+.margin{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#container::before{
+    content: "";
+    position: absolute;
+    height: 123vh;
+    width: 80vw;
+    background-color: silver;
+    z-index: -1;
+}
+
+.row1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.row2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.box{
+    /* border: 2px solid black; */
+    border-radius: 0px;
+    display: inline-block;
+    text-align: center;
+    margin: 20px 90px;
+    padding: 10px 8px;
+    font-size: 20px;
+}
+
+.box *{
+    padding-top: 10px;
+}
+.box img{
+    width: 220px;
+    border-radius: 30px;
+}
+
+button{
+    /* border: 2px solid whitesmoke; */
+    border: none;
+    border-radius: 10px;
+    margin-top: 10px;
+    padding: 7px 15px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: rgb(252, 129, 129);
+    color: white;
+}
+
+/* span sec */
+.underline{
+    text-decoration: line-through;
+}
+
+.offer{
+    color: rgb(93, 177, 93);
+}
+
+.charges{
+    color: rgb(240, 85, 85);
+}
+

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOBILE SHOP</title>
+    <link rel="stylesheet" href="offer.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+</head>
+<body>
+    <div class="container margin" id="container">
+        <section id="heading">
+            <div class="time">
+                <h1>Limited Offers</h1>
+            </div>
+        </section>
+
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide"><img src="offer img/s1.png"></div>
+              <div class="swiper-slide"><img src="offer img/s2.webp"></div>
+              <div class="swiper-slide"><img src="offer img/s3.jpg"></div>
+              <div class="swiper-slide"><img src="offer img/s4.webp"></div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+          
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        
+        <section id="details">
+            <div class="details">
+                <ul class="information">
+                    <li>Product Name : SAMSUNG M31S</li>
+                    <li>Price : Rs.25000/-</li>
+                    <li>After Discount Applied : <span id="color">Rs.18000/-</span></li>
+                    <li>Features : <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati rem, error quidem laboriosam aliquam saepe natus aperiam pariatur amet perspiciatis dolore dolores culpa odit veritatis! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates, eaque?</p></li>
+                    <li>Availability : <span id="color">In Stock</span></li>
+                    <li>EMI Options Available</li>
+                    <li>Free Delivery Applied</li>
+                    <!-- <li><span id="btn"><button>Book Now</button></span></li> -->
+                </ul>
+             </div>
+             <div class="btn">
+                <button>Book Now</button>
+             </div>
+        </section>
+
+        <section id="time">
+            <div class="time">
+                <h1>Offer ends in 2days!</h1>
+            </div>
+        </section>
+ 
+    </div>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            direction: 'horizontal',
+            loop: true,
+
+            pagination: {
+               el: '.swiper-pagination',
+               clickable : true,
+            },
+
+        // Navigation arrows
+            navigation: {
+               nextEl: '.swiper-button-next',
+               prevEl: '.swiper-button-prev',
+            },
+        });
+
+    </script>
+</body>
+</html>
